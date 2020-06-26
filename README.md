@@ -6,4 +6,4 @@ Each directory contains a single design, below you'll find links to each exercis
 
 ## Exercises
 
-- Ratings Card - <https://uidesigndaily.com/posts/figma-ratings-card-review-rating-day-1113>
+- [Ratings Card](https://uidesigndaily.com/posts/figma-ratings-card-review-rating-day-1113)
