@@ -1,0 +1,119 @@
+:root {
+  font-family: "Muli", sans-serif;
+
+  --main-bg-color: #f5f8ff;
+  --light-bg-color: #f5f8ff;
+  --light-text-color: #595b71;
+  --card-background-color: #ffffff;
+  --text-highlight-color: #2a5bda;
+  --star-color: #fccc4d;
+  --big-text: 18px;
+  --small-text: 16px;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  width: 100%;
+}
+
+.container {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--card-background-color);
+  margin: 0 auto;
+  padding: 40px 0;
+  width: 550px;
+  border-radius: 7px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.15), 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  margin-bottom: 20px;
+  font-size: 32px;
+  font-weight: 700;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.stars-container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-color: var(--light-bg-color);
+  padding: 15px 15px;
+  border-radius: 50px;
+}
+
+.stars {
+  display: flex;
+  height: 33px;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.star {
+  color: var(--star-color);
+  padding: 0 5px;
+}
+
+.numeric-rating {
+  margin: 0;
+  padding-left: 15px;
+  font-size: var(--small-text);
+}
+
+.ratings-total {
+  margin: 5px 0 20px 0;
+  padding: 0;
+  color: var(--light-text-color);
+  font-size: var(--small-text);
+}
+
+.rating-delegation {
+  list-style-type: none;
+  padding: 0;
+}
+
+.star-progress {
+  display: flex;
+  justify-items: space-between;
+  align-items: center;
+  font-size: var(--big-text);
+  margin: 20px 0;
+}
+.star-progress .rating-indicator {
+  color: var(--text-highlight-color);
+}
+.star-progress .rating-progress-container {
+  background-color: var(--light-bg-color);
+  border-radius: calc(16px / 2);
+  width: 280px;
+  height: 16px;
+  margin: 0 10px;
+}
+.star-progress .rating-progress {
+  height: 100%;
+  border-radius: calc(16px / 2);
+  background-color: var(--star-color);
+  box-shadow: 1px 2px 4px var(--star-color);
+}
+
+a {
+  color: var(--text-highlight-color);
+  text-decoration: none;
+}
